@@ -19,8 +19,11 @@ from pages.views import home_view, about_view, contact_view, address_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', home_view),
+    path('home', home_view),
     path('about', about_view),
     path('contact', contact_view),
     path('address', address_view),
+    
    
 ]
