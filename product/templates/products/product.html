@@ -5,12 +5,12 @@
         </title>
     </head>
     <body>
-        <p>this is produciton.html</p>
-        <form method='POST'> 
-            <input type="text" name="title" placeholder="your title"/>
-            <input type="submit" value="save" />
+        <p>this is production.html</p>
+        <form action="" method="POST"> {% csrf_token %}
+            <input type="text" name="title" placeholder="Your title"/><br>
+            <input type="text" name="price" placeholder="Your price"/><br>
+            <input type="text" name="description" placeholder="Your description"/>
+            <input type="submit" value="Save" />
         </form>
-
-
     </body>
 </html>
