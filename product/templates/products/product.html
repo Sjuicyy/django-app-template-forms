@@ -6,11 +6,9 @@
     </head>
     <body>
         <p>this is production.html</p>
-        <form action="" method="POST"> {% csrf_token %}
-            <input type="text" name="title" placeholder="Your title"/><br>
-            <input type="text" name="price" placeholder="Your price"/><br>
-            <input type="text" name="description" placeholder="Your description"/>
-            <input type="submit" value="Save" />
+        <form action="" method="POST"> 
+            {{ form.as_p }}
+        <input type="submit" value="Save" />
         </form>
     </body>
 </html>
